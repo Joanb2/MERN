@@ -18,7 +18,7 @@ router.route('/posts/:cuid').put(PostController.editPost);
 router.route('/posts/:cuid').delete(PostController.deletePost);
 
 //Votes of the post
-router.route('/posts').put(PostController.thumbUp);
-router.route('/posts').put(PostController.thumbDown);
+router.route('/posts/:cuid').put(PostController.thumbUp);
+router.route('/posts/:cuid').put(PostController.thumbDown);
 
 export default router;

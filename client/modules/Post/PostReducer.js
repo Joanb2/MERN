@@ -28,7 +28,7 @@ const PostReducer = (state = initialState, action) => {
 	case THUMB_UP :
 		console.log('up', state.data, action);
 		return {
-			data: state.data.map(post => { return post.cuid === action.cuid ? console.log({ ...post, votes: post.votes + 1 }) : post; }),
+			data: state.data.map(post => { return post.cuid === action.cuid ? { ...post, votes: post.votes + 1 } : post; }),
 		};
 
 	case THUMB_DOWN :
