@@ -65,7 +65,7 @@
         {
           "blueprint-path": "config/blueprints/arrow-functional-component.ejs",
           "parent-path": "client/modules/<%= helpers.capitalize(parent) %>",
-          "target-path": "components/<%= helpers.capitalize(name) %>/<%= helpers.capitalize(name) %>.js"
+          "target-path": "client/modules/App/components/<%= helpers.capitalize(name) %>/<%= helpers.capitalize(name) %>.js"
         }
       ]
     },

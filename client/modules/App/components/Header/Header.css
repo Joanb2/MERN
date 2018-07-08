@@ -1,7 +1,24 @@
 .header {
-  background: #eee url('../../header-bk.png') center;
+  background: #eee url('../header-bk.png') center;
   background-size: cover;
   border-bottom: 1px solid #ccc;
+}
+
+nav {
+  float: left;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+}
+
+nav li a {
+  cursor: pointer;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
 }
 
 .content {
